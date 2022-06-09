@@ -1,0 +1,69 @@
+﻿
+Bee [][] 1-250;
+#First dimension is for Bee's number and second for Bee's Decision
+
+int interdepedence;
+int RandomPointToVisit;
+HivePoints [][];
+
+GenerateFirstExperiment()
+
+{
+HivePoints[][] = AssignQualityToFirstDimension();
+  for Bee[i][] i++
+        Visit(RandomPointToVisit,i);
+        Visit(RandomPointToVisit,i);
+        Visit(RandomPointToVisit,i);
+        Visit(RandomPointToVisit,i);
+        BeeDecision(Bee[i][]);
+for Bee[i][] i ++
+    interdepedenceInfluence(Bee[i][],Bee[][top.HivePoint])
+}
+
+#result 
+    for Bee[i][Decision] i++
+        if Bee[i][Decision] == 1 
+        counter1 ++;
+        if Bee[i][Decision] == 2 
+        counter2 ++;
+        if Bee[i][Decision] == 3 
+        counter3 ++;
+        if Bee[i][Decision] == 4 
+        counter4 ++;
+        if Bee[i][Decision] == 5 
+        counter5 ++;
+        if Bee[i][Decision] == 6 
+        counter6 ++;
+        if Bee[i][Decision] == 7 
+        counter7 ++;
+        if Bee[i][Decision] == 8 
+        counter8 ++;
+#highest.counter$ wins the round
+
+interdepedenceInfluence(Bee [i] [], Bee[] [top.HivePoint])
+  {
+    If Bee[i][Decision] ≤ Bee[][top.HivePoint]
+        int RANDOM_INT #1-100 random number
+            If RANDOM_INT ≥ interdepedence
+                Bee[i][top.HivePoint];
+                #influenced- new decision is top HivePoint
+            Else
+                Bee[i][Decision];
+    }
+}
+
+
+Visit(i,RandomPointToVisit)
+{
+  HivePoints[RandomPointToVisit][Quality]
+  int a = getHivePointNumber();
+  Bee[i][a];
+}
+
+BeeDecision(Bee[i][])
+ {
+ sort.Bee[i][]
+ #sorting the highest pointed hive to first place
+ }
+
+ 
