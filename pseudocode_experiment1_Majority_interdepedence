@@ -22,6 +22,7 @@ for Bee[i][] i ++
 
 #result 
     for Bee[i][Decision] i++
+        #logging every decision to the csv.
         if Bee[i][Decision] == 1 
         counter1 ++;
         if Bee[i][Decision] == 2 
@@ -39,6 +40,7 @@ for Bee[i][] i ++
         if Bee[i][Decision] == 8 
         counter8 ++;
 #highest.counter$ wins the round
+
 
 interdepedenceInfluence(Bee [i] [], Bee[] [top.HivePoint])
   {
