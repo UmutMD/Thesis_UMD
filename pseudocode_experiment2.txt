@@ -1,0 +1,81 @@
+﻿
+BeeGroups [][] 
+#1-5 for 5 groups, Second dimension is for visited sites. 
+#Second dimension can be counted as preference, if we count untill Bee[][Decision +5] that means we can reach fifth preference after sorting.
+int RandomPointToVisit;
+HivePoints [][];
+
+GenerateSecondExperiment()
+
+{
+HivePoints[][] = AssignQualityToFirstDimension();
+  for Bee[i][] i++
+        Visit(RandomPointToVisit,i);
+        Visit(RandomPointToVisit,i);
+        Visit(RandomPointToVisit,i);
+        Visit(RandomPointToVisit,i);
+        BeeDecision(Bee[i][]);
+		
+}
+
+#Result section will contain 2 parts because every bee group have 2 point and 1 point to cast on a hive point.
+
+#2 points for first choice
+
+    for Bee[i][Decision] i++
+        if Bee[i][Decision] == 1 
+        counter1 = +2;
+        if Bee[i][Decision] == 2 
+        counter1 = +2;
+        if Bee[i][Decision] == 3 
+        counter1 = +2;
+        if Bee[i][Decision] == 4 
+        counter1 = +2;
+        if Bee[i][Decision] == 5 
+        counter1 = +2;
+        if Bee[i][Decision] == 6 
+        counter1 = +2;
+        if Bee[i][Decision] == 7 
+        counter1 = +2;
+        if Bee[i][Decision] == 8 
+        counter1 = +2;
+		
+#1 point for the second choice
+
+	for Bee[i][Decision+1] i++
+        if Bee[i][Decision+1] == 1 
+        counter1 = +1;
+        if Bee[i][Decision+1] == 2 
+        counter1 = +1;
+        if Bee[i][Decision+1] == 3 
+        counter1 = +1;
+        if Bee[i][Decision+1] == 4 
+        counter1 = +1;
+        if Bee[i][Decision+1] == 5 
+        counter1 = +1;
+        if Bee[i][Decision+1] == 6 
+        counter1 = +1;
+        if Bee[i][Decision+1] == 7 
+        counter1 = +1;
+        if Bee[i][Decision+1] == 8 
+        counter1 = +1;
+
+#highest.counter$ wins the round
+
+
+Visit(i,RandomPointToVisit)
+{
+  HivePoints[RandomPointToVisit][Quality]
+  int a = getHivePointNumber();
+  append.Bee[i][a];
+  #Difference in here is, we are adding the hive point to the end of the second dimensional array.
+  
+}
+
+BeeDecision(Bee[i][])
+ {
+ sort.Bee[i][]
+ #It will sort every i'th bee's top site to worst site in the second dimension.
+ }
+
+ 
