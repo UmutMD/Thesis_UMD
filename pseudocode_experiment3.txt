@@ -1,0 +1,74 @@
+﻿Bees[] 1-250
+DelegatedBees[] [] 
+
+#First Dimension is 3 unique numbers between 1-8, represents delegated bee and second dimension is for number of voting rights collected.
+
+#Each Bee does not need to scout for a hive spot in this experiment, rather it will be doing one of three actions. 
+#Assigning 3 DelegatedBees to delegate a perfect spot.
+
+int Beecounter 250
+
+#This counter is for ending the experiment, if less then %5 of the Beecounter remains, voting will end.
+
+HiveSpots[][] 
+
+GenerateThirdExperiment()
+
+{
+  #For Liquid Democracy first experiment was done with High Delegate, the second experiment was done with Medium delegates, third experiment was done with Low delegate
+  int passRate
+  int voteRate 
+  
+		while(Beecounter >= 12)
+		
+			int a = RandomFloat #Random float number between 0.00 - 1.00
+				if a < PassRate
+					Pass
+				if passRate < a < delegateRate
+					VoteToRandomHive()
+					Beecounter -1
+				else
+					Delegate()
+					Beecounter -1
+	
+	#obtaining results
+	
+	
+	for HiveSpots[i][] i++
+		
+		if HiveSpots[i] = 1
+			counter1 + HiveSpots[i][NumberofVotes] 
+		if HiveSpots[i] = 2
+			counter2 + HiveSpots[i][NumberofVotes] 	
+			.
+			.
+			.
+		if HiveSpots[i] = 7
+			counter7 + HiveSpots[i][NumberofVotes] 
+		if HiveSpots[i] = 8
+			counter8 + HiveSpots[i][NumberofVotes] 
+	
+	counter[relatedCounter]+ DelegatedBees[1][NumberofVotes]
+	counter[relatedCounter]+ DelegatedBees[2][NumberofVotes]
+	counter[relatedCounter]+ DelegatedBees[3][NumberofVotes]
+	
+	#highest counter wins the round
+
+Delegate()
+{
+	int a = RandomNumber() #between 1-3 
+	DelegatedBees[a][NumberofVotes+1]
+	
+}	
+	
+VoteToRandomHive()
+{
+	
+	int a = RandomNumber #Between 1-8
+	HiveSpots [a][NumberofVotes+1] #Adding an element to second dimension, by calculating total length of second dimension gives us total points for that hive
+	
+}	
+
+}
+
+
