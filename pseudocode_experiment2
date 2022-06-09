@@ -1,7 +1,7 @@
 ﻿
 BeeGroups [][] 
-#1-5 for 5 groups, Second dimension is for visited sites. 
-#Second dimension can be counted as preference, if we count untill Bee[][Decision +5] that means we can reach fifth preference after sorting.
+#1-5 for 5 groups, the Second dimension is for visited sites. 
+#Second dimension can be counted as a preference, if we count until Bee[][Decision +5] that means we can reach the fifth preference after sorting. #sorting the highest pointed hive to first place
 int RandomPointToVisit;
 HivePoints [][];
 
@@ -18,9 +18,9 @@ HivePoints[][] = AssignQualityToFirstDimension();
 		
 }
 
-#Result section will contain 2 parts because every bee group have 2 point and 1 point to cast on a hive point.
+#Result section will contain 2 parts because every bee group has 2 point and 1 point to cast on a hive point.
 
-#2 points for first choice
+#2 points for the first choice
 
     for Bee[i][Decision] i++
         if Bee[i][Decision] == 1 
@@ -68,7 +68,7 @@ Visit(i,RandomPointToVisit)
   HivePoints[RandomPointToVisit][Quality]
   int a = getHivePointNumber();
   append.Bee[i][a];
-  #Difference in here is, we are adding the hive point to the end of the second dimensional array.
+  #The difference here is, that we are adding the hive point to the end of the second-dimensional array.
   
 }
 
