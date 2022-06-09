@@ -4,25 +4,31 @@ Bee [][] 1-250;
 
 #HivePoints [][] First dimension is for HivePoints place 1-8, second is Quality.
 
-
-int interdependence;
+#Predefined values
+int interdependence
 int independence
-int RandomPointToVisit;
+
+int RandomPointToVisit
+
+#For Experiment 3
+int ChanceToFind
+
+
 HivePoints [][];
 
 GenerateFirstExperiment()
 
 {
 
-AssignQualityToSecondDimension(HivePoints[][]);
+AssignQualityToSecondDimension(HivePoints[][])
 
 
   for every Bee[i][] i++
-        Visit(RandomPointToVisit,i);
-        Visit(RandomPointToVisit,i);
-        Visit(RandomPointToVisit,i);
-        Visit(RandomPointToVisit,i);
-        BeeDecision(Bee[i][]);
+        Visit(RandomPointToVisit,i)
+        Visit(RandomPointToVisit,i)
+        Visit(RandomPointToVisit,i)
+        Visit(RandomPointToVisit,i)
+        BeeDecision(Bee[i][])
         
   for Bee[i][] i ++
        interdependenceInfluence(Bee[i][],Bee[][top.HivePoint])
@@ -34,21 +40,21 @@ AssignQualityToSecondDimension(HivePoints[][]);
     for Bee[i][Decision] i++
         #logging every decision to the csv.
         if Bee[i][Decision] == 1 
-        counter1 ++;
+        counter1 ++
         if Bee[i][Decision] == 2 
-        counter2 ++;
+        counter2 ++
         if Bee[i][Decision] == 3 
-        counter3 ++;
+        counter3 ++
         if Bee[i][Decision] == 4 
-        counter4 ++;
+        counter4 ++
         if Bee[i][Decision] == 5 
-        counter5 ++;
+        counter5 ++
         if Bee[i][Decision] == 6 
-        counter6 ++;
+        counter6 ++
         if Bee[i][Decision] == 7 
-        counter7 ++;
+        counter7 ++
         if Bee[i][Decision] == 8 
-        counter8 ++;
+        counter8 ++
 #highest.counter$ wins the round
 #counter numbers represent the amount of vote collected.
 
@@ -69,9 +75,16 @@ interdependenceInfluence(Bee [i] [], Bee[] [top.HivePoint])
 
 Visit(i,RandomPointToVisit)
 {
-  HivePoints[RandomPointToVisit][Quality]
-  int a = getHivePointNumber();
-  Bee[i][a];
+   int RANDOM_INT #1-100 random number 
+   If ChanceToFind ≥ RANDOM_INT
+   
+      #Found a hive Point.
+      
+      HivePoints[RandomPointToVisit][Quality]
+      int a = getHivePointNumber()
+      Bee[i][a]
+   Else
+     #Pass the time stage.
 }
 
 BeeDecision(Bee[i][])
