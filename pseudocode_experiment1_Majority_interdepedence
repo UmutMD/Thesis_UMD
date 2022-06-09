@@ -1,6 +1,6 @@
 ﻿
 Bee [][] 1-250;
-#First dimension is for Bee's number and second for Bee's Decision
+#First dimension is for Bee's number and second dimension is for Bee's Decision
 
 #HivePoints [][] First dimension is for HivePoints place 1-8, second is Quality.
 
@@ -56,9 +56,9 @@ AssignQualityToSecondDimension(HivePoints[][])
         if Bee[i][Decision] == 8 
         counter8 ++
 #highest.counter$ wins the round
-#counter numbers represent the amount of vote collected.
+#counter numbers represent the amount of votes collected.
 
-#The influence mechanism varies from experiment to experiment as interdependence or indepedence, and they work the same in terms of functioning.
+#The influence mechanism varies from experiment to experiment as interdependence or independence, and they work the same in terms of functioning.
 
 interdependenceInfluence(Bee [i] [], Bee[] [top.HivePoint])
   {
