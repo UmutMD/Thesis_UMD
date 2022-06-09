@@ -2,22 +2,32 @@
 Bee [][] 1-250;
 #First dimension is for Bee's number and second for Bee's Decision
 
-int interdepedence;
+#HivePoints [][] First dimension is for HivePoints place 1-8, second is Quality.
+
+
+int interdependence;
+int independence
 int RandomPointToVisit;
 HivePoints [][];
 
 GenerateFirstExperiment()
 
 {
-HivePoints[][] = AssignQualityToFirstDimension();
-  for Bee[i][] i++
+
+AssignQualityToSecondDimension(HivePoints[][]);
+
+
+  for every Bee[i][] i++
         Visit(RandomPointToVisit,i);
         Visit(RandomPointToVisit,i);
         Visit(RandomPointToVisit,i);
         Visit(RandomPointToVisit,i);
         BeeDecision(Bee[i][]);
-for Bee[i][] i ++
-    interdepedenceInfluence(Bee[i][],Bee[][top.HivePoint])
+        
+  for Bee[i][] i ++
+       interdependenceInfluence(Bee[i][],Bee[][top.HivePoint])
+    
+    
 }
 
 #result 
@@ -40,9 +50,11 @@ for Bee[i][] i ++
         if Bee[i][Decision] == 8 
         counter8 ++;
 #highest.counter$ wins the round
+#counter numbers represent the amount of vote collected.
 
+#The influence mechanism varies from experiment to experiment as interdependence or indepedence, and they work the same in terms of functioning.
 
-interdepedenceInfluence(Bee [i] [], Bee[] [top.HivePoint])
+interdependenceInfluence(Bee [i] [], Bee[] [top.HivePoint])
   {
     If Bee[i][Decision] ≤ Bee[][top.HivePoint]
         int RANDOM_INT #1-100 random number
